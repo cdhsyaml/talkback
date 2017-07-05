@@ -2,6 +2,9 @@ $(document).ready(function(){
   $("button#hello").click(function(){
     $("ul#user").prepend("<li>Hello!</li>");
     $("ul#webpage").prepend("<li>Hi!</li>");
+    $("li").click(function() {
+      alert("Hi");
+    });
   });
   $("button#goodbye").click(function(){
     $("ul#user").prepend("<li>See Ya!</li>");
